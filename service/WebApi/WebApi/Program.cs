@@ -1,5 +1,8 @@
-var builder = WebApplication.CreateBuilder(args);
+using WebApi.Helpers;
+using WebApi.Models.Configuration;
 
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -7,8 +10,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
 
+services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+AppSettings appSettings = builder.Configuration.GetSection("AppSettings").Get<AppSettings>();
+
+services.AddCustomServices(appSettings);
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
