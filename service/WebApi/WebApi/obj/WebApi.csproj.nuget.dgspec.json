@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ndp-task-tracker\\service\\webApi\\WebApi\\WebApi.csproj": {}
+    "D:\\ndp-task-tracker\\service\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "D:\\ndp-task-tracker\\service\\webApi\\WebApi\\WebApi.csproj": {
+    "D:\\ndp-task-tracker\\service\\WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ndp-task-tracker\\service\\webApi\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "D:\\ndp-task-tracker\\service\\WebApi\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "D:\\ndp-task-tracker\\service\\webApi\\WebApi\\WebApi.csproj",
+        "projectPath": "D:\\ndp-task-tracker\\service\\WebApi\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\fatih\\.nuget\\packages\\",
-        "outputPath": "D:\\ndp-task-tracker\\service\\webApi\\WebApi\\obj\\",
+        "outputPath": "D:\\ndp-task-tracker\\service\\WebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

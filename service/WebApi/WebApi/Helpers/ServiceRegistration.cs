@@ -1,6 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using WebApi.Entities.TaskTracker;
 using WebApi.Models.Configuration;
+using WebApi.Services;
 
 namespace WebApi.Helpers
 {
@@ -23,7 +24,11 @@ namespace WebApi.Helpers
         public static IServiceCollection AddCustomServices(this IServiceCollection services, AppSettings appSettings)
         {
             services.AddDbContext<TaskTrackerDbContext>();
-         
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ITaskService, TaskService>();
+
+
+
 
             return services;
         }

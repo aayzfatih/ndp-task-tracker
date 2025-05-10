@@ -1,1 +1,1 @@
-Scaffold-DbContext Name=TaskTrackerDb -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Entities/TaskTracker" -Context "TaskTrackerDbContext" –Force
+Scaffold-DbContext Name=ConnectionStrings:TaskTrackerDb -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Entities/TaskTracker" -Context "TaskTrackerDbContext" –Force
